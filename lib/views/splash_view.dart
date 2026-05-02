@@ -21,7 +21,6 @@ class _SplashViewState extends State<SplashView> {
   void _checkStatus() async {
     final viewModel = Provider.of<LoginViewModel>(context, listen: false);
     
-    // Memberikan jeda sedikit agar efek splash screen terlihat
     await Future.delayed(const Duration(seconds: 1));
     
     final isLoggedIn = await viewModel.checkLoginStatus();

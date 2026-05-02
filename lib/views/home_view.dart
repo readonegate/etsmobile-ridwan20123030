@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('Home Page - Ridwan 20123030'),
         centerTitle: true,
       ),
       body: Center(
@@ -29,10 +29,14 @@ class HomeView extends StatelessWidget {
               'Welcome to Home Page!',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 16),
-            Text(
-              'Your Token: ${viewModel.user?.token ?? "Unknown"}',
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
+            const SizedBox(height: 8),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: Text(
+                'Your Token: ${viewModel.user?.token ?? "Unknown"}',
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 16, color: Colors.grey),
+              ),
             ),
             const SizedBox(height: 40),
             ElevatedButton.icon(
